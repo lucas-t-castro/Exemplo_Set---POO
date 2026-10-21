@@ -53,5 +53,21 @@ public class ExemploSet{
         notas2.add(10d);
         notas2.add(7.1);
         System.out.println(notas2);
+
+        //* utilizando Size*//
+        System.out.println("Exiba as notas em ordem crescente: ");
+        Set<Double> notas3 = new TreeSet<>(notas2);
+        System.out.println(notas3);
+
+        //* Utilizando Remove*//
+        System.out.println("Apague todo o conjuto de notas: ");
+        notas.clear();
+
+        System.out.println("Apagou o conjuto notas?" + notas.isEmpty());
+
+        //*Caso utilizássemos isEmpty nos conjuntos notas2 e notas3, retornaria false *//
+        System.out.println("Apagou o conjuto notas?" + notas2.isEmpty());
+        System.out.println("Apagou o conjuto notas?" + notas3.isEmpty());
     }
+
 }
